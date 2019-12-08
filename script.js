@@ -111,10 +111,12 @@ c('.menu-closer').addEventListener('click', ()=>{
 
 function updateCart() {
 
+	c('.menu-openner-desk span').innerHTML = cart.length;
 	c('.menu-openner span').innerHTML = cart.length;
 
 	if (cart.length > 0) {
 		c('aside').classList.add('show');
+		c('.menu-openner-desk').classList.add('show');
 		c('.cart').innerHTML = '';
 
 		let subtotal = 0;
@@ -167,6 +169,7 @@ function updateCart() {
 			c('.total span:last-child').innerHTML = `R$ ${total.toFixed(2).replace(".", ",")}`;
 	} else {
 		c('aside').classList.remove('show');
+		c('.menu-openner-desk').classList.remove('show');
 		c('aside').style.left = '100vw';
 	}
 }

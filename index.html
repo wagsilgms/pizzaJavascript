@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="models">
+
+        <!-- Item de cada pizza, para ser clonado -->
         <div class="pizza-item">
             <a href="">
                 <div class="pizza-item--img"><img src=""></div>
@@ -19,6 +20,8 @@
             <div class="pizza-item--name">--</div>
             <div class="pizza-item--desc">--</div>
         </div>
+
+        <!-- Itens que serão clonados quando abrir o carrinho -->
         <div class="cart--item">
             <img src="">
             <div class="cart--item-nome">--</div>
@@ -31,6 +34,8 @@
     </div>
 
     <header>
+        <!-- Cabeçalho do carrinho no mobile -->
+        <h1>Pizzas</h1>
         <div class="menu-openner">
             <span>0</span><img src="images/carrinho.png" alt="">
         </div>
@@ -38,9 +43,15 @@
 
     <main>
         <h1>Pizzas</h1>
-        <div class="pizza-area"></div>
+        <div class="menu-openner-desk">
+            <span>0</span><img src="images/carrinho.png" alt="">
+        </div>
+        <div class="pizza-area">
+            <!-- Área onde aparecem as pizzas, com clone vindo pelo Javascript -->
+        </div>
     </main>
 
+    <!-- Carrinho de compras no mobile -->
     <aside class="aside">
         <div class="cart--area">
             <div class="menu-closer">❌</div>
@@ -63,7 +74,8 @@
             </div>
         </div>
     </aside>
-    
+
+    <!-- Popup que aparece quando escolhe a pizza, antes de ir para o carrinho de compras -->
     <div class="pizzaWindowArea">
         <div class="pizzaWindowBody">
             <div class="pizzaInfo--cancelMobileButton">Voltar</div>
